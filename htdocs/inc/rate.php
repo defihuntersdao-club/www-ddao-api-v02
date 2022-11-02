@@ -41,10 +41,17 @@ $b_mas[token1] = "0xd21220a7";
 $b_mas[reserv] = "0x0902f1ac";
 $b_mas[supply] = "0x18160ddd";
 
-$mas = contract_list();
-$contract_list = $mas;
-//print_r($mas);
-foreach($mas[lp] as $net=>$v4)
+//$mas = contract_list();
+//$contract_list = $mas;
+unset($mas);
+$f = __DIR__;
+$f = dirname($f);
+$f = dirname($f);
+$f .= "/contract_list.php";
+include $f;
+//$mas = 
+//print_r($contract_list);
+foreach($contract_list[lp] as $net=>$v4)
 {
     foreach($v4 as $name=>$v3)
     foreach($v3 as $pair=>$contract)
