@@ -1,0 +1,11 @@
+{
+    "result": {
+        "matic_gas": 45.73,
+        "eth_gas": 67.57,
+        "rate_ddao": 0.083,
+        "rate_matic": 0.858,
+        "rate_eth": 1562.2,
+        "rate_btc": 20449.6
+    },
+    "etime": "0.7144 sec"
+}
