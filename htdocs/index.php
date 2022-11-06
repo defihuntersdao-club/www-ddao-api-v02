@@ -51,8 +51,14 @@ switch($item)
 //    case "UsersByAddr":
 //    case "UserMatrix":
 //    case "VaultList":
+    case "balance_token":
+//	$need_cache = 10;
+    break;
+    case "balance":
+	$need_cache = 5;
+    break;
     case "dashboard":
-	$need_cache = 1;
+	$need_cache = 5;
     break;
     case "main":
     case "":
@@ -70,7 +76,7 @@ if($need_cache)
 {
 $cache_file = __DIR__."/cache/".$sol."_".$item."_".$item2."_".$item3.".cache";
 $t = filemtime($cache_file);
-if(time()<($t+10))
+if(time() < ($t + $need_cache))
 {
 $txt = file_get_contents($cache_file);
 $o = json_decode($txt,1);

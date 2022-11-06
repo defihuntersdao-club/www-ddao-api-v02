@@ -41,9 +41,12 @@ $tkns[$k][dai] 	= "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063";
 $tkns[$k][usdt] = "0xc2132D05D31c914a87C6611C10748AEb04B58e8F";
 $tkns[$k][usdc] = "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174";
 
+/*
 $b_mas[eth] = "0xA2004cb2e3B72a3A32D5FB5C2b0b5dDe8Cbd3783";
 $b_mas[bsc] = "0x918294145B18Ae868b00efa4b7AFe3c3869b8A27";
 $b_mas[matic] = "0x608FCdfcaB64439C185CBfC6D39f4e61056E685D";
+*/
+include "balance.inc";
 
 
 foreach($b_mas as $net => $contract)

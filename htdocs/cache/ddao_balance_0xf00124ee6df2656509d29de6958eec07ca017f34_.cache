@@ -1,0 +1,120 @@
+{
+    "result": {
+        "address": "0xf00124ee6df2656509d29de6958eec07ca017f34",
+        "balance": {
+            "eth": {
+                "ETH": {
+                    "balance_coin2": 2.7912240726986326,
+                    "balance_coin": 2.791,
+                    "t1": 48464203.986713,
+                    "t2": 30130.07389778519,
+                    "rate": 1608.4993402646624,
+                    "balance2": 4489.682079466595,
+                    "balance": "4489.682 [2.791 ETH]"
+                },
+                "USDC": {
+                    "addr": "0xb86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                    "balance2": "0",
+                    "decimal": 6,
+                    "balance": 0,
+                    "name": "USDC"
+                },
+                "USDT": {
+                    "addr": "0xc17f958d2ee523a2206206994597c13d831ec7",
+                    "balance2": "0",
+                    "decimal": 6,
+                    "balance": 0,
+                    "name": "USDT"
+                },
+                "DAI": {
+                    "addr": "0x175474e89094c44da98b954eedeac495271d0f",
+                    "balance2": "0",
+                    "decimal": 18,
+                    "balance": 0,
+                    "name": "DAI"
+                },
+                "all": {
+                    "balance": "4 489.68"
+                }
+            },
+            "bsc": {
+                "BNB": {
+                    "balance_coin2": 0,
+                    "balance_coin": 0,
+                    "t1": 66823608.31169824,
+                    "t2": 189725.36222694188,
+                    "rate": 352.21231113933266,
+                    "balance2": 0,
+                    "balance": "0 [0 BNB]"
+                },
+                "DAI": {
+                    "addr": "0xf3f329e8be154074d8769d1ffa4ee058b1dbc3",
+                    "balance2": "0",
+                    "decimal": 18,
+                    "balance": 0,
+                    "name": "DAI"
+                },
+                "USDT": {
+                    "addr": "0xd398326f99059ff775485246999027b3197955",
+                    "balance2": "0",
+                    "decimal": 18,
+                    "balance": 0,
+                    "name": "USDT"
+                },
+                "USDC": {
+                    "addr": "0xc76a51cc950d9822d68b83fe1ad97b32cd580d",
+                    "balance2": "0",
+                    "decimal": 18,
+                    "balance": 0,
+                    "name": "USDC"
+                },
+                "BUSD": {
+                    "addr": "0xe7cea3dedca5984780bafc599bd69add087d56",
+                    "balance2": "0",
+                    "decimal": 18,
+                    "balance": 0,
+                    "name": "BUSD"
+                },
+                "all": {
+                    "balance": "0.00"
+                }
+            },
+            "matic": {
+                "MATIC": {
+                    "balance_coin2": 74611.44690931487,
+                    "balance_coin": 74611.446,
+                    "t1": 2632461.137781404,
+                    "t2": 3141868.000583,
+                    "rate": 1.1935097371393357,
+                    "balance2": 89049.48838832189,
+                    "balance": "89049.488 [74611.446 MATIC]"
+                },
+                "DAI": {
+                    "addr": "0x3cf7ad23cd3cadbd9735aff958023239c6a063",
+                    "balance2": "0",
+                    "decimal": 18,
+                    "balance": 0,
+                    "name": "DAI"
+                },
+                "USDT": {
+                    "addr": "0x132d05d31c914a87c6611c10748aeb04b58e8f",
+                    "balance2": "0",
+                    "decimal": 6,
+                    "balance": 0,
+                    "name": "USDT"
+                },
+                "USDC": {
+                    "addr": "0x91bca1f2de4661ed88a30c99a7a9449aa84174",
+                    "balance2": "1013",
+                    "decimal": 6,
+                    "balance": 0.001013,
+                    "name": "USDC"
+                },
+                "all": {
+                    "balance": "89 049.49"
+                }
+            }
+        }
+    },
+    "etime": "0.4719 sec"
+}
