@@ -291,7 +291,7 @@ foreach($balance as $net=>$v2)
 {
     $t = round($v2,2);
     $t =  number_format($t,2,"."," ");
-    $o3[$net][all][balance] = $t;
+    $o3[$net][ALL][balance] = $t;
 }
 $o[result][address] = strtolower($wal);;
 $o[result][$item] = $o3;

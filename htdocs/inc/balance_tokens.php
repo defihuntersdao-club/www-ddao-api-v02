@@ -13,7 +13,7 @@ else
 
 include "balance.inc";
 
-$f = __DIR__."/".$item.".json";
+$f = __DIR__."/balance_token.json";
 
 $f2 = "/www/app.defihuntersdao.club/1_test/www-ddao-app/bin/001_load_tokenlists.php.json";
 if(file_exists($f2))
@@ -164,8 +164,18 @@ foreach($mas as $v2)
 }
 
 }
+$nn = 0;
+foreach($o3 as $k=>$v2)
+{
+    if($v2[balance]>0)
+    {
+    $nn++;
+    $o4[$k] = $v2;
+    $o4[$k][num] = $nn;
+    }
+}
 
-$o[result] = $o3;
+$o[result] = $o4;
 }
 
 ?>

@@ -8471,6 +8471,14 @@
                 "symbol": "GNFT",
                 "decimals": 18,
                 "logoURI": "https://raw.githubusercontent.com/nftindex-tech/gnft-logo/main/gnft_1894_200x200.png"
+            },
+            "0xbCaD06fdFcEa3FD7D082b14F47A6757e11c5846c": {
+                "address": "0xbCaD06fdFcEa3FD7D082b14F47A6757e11c5846c",
+                "chainId": 1,
+                "name": "ULP GNFT/WETH",
+                "symbol": "UlpGnftEth",
+                "decimals": 18,
+                "logoURI": "https://app-test.defihuntersdao.club/images/ico/uni.svg"
             }
         },
         "3": {
@@ -15047,6 +15055,22 @@
                 "symbol": "GNFT",
                 "decimals": 18,
                 "logoURI": "https://raw.githubusercontent.com/nftindex-tech/gnft-logo/main/gnft_1894_200x200.png"
+            },
+            "0x3fd0CC5f7Ec9A09F232365bDED285e744E0446e2": {
+                "address": "0x3fd0CC5f7Ec9A09F232365bDED285e744E0446e2",
+                "chainId": 137,
+                "name": "SLP GNFT/USDC",
+                "symbol": "SlpGnftEth",
+                "decimals": 18,
+                "logoURI": "https://res.cloudinary.com/sushi-cdn/image/fetch/f_auto,c_limit,w_48,q_auto/https://app.sushi.com/images/logo.svg"
+            },
+            "0xfC067766349d0960bdC993806EA2E13fcFC03C4D": {
+                "address": "0xfC067766349d0960bdC993806EA2E13fcFC03C4D",
+                "chainId": 137,
+                "name": "SLP DDAO/WETH",
+                "symbol": "SlpDdaoEth",
+                "decimals": 18,
+                "logoURI": "https://res.cloudinary.com/sushi-cdn/image/fetch/f_auto,c_limit,w_48,q_auto/https://app.sushi.com/images/logo.svg"
             }
         },
         "42161": {
@@ -29017,6 +29041,30 @@
             "symbol": "GNFT",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/nftindex-tech/gnft-logo/main/gnft_1894_200x200.png"
+        },
+        "SlpGnftEth": {
+            "address": "0x3fd0CC5f7Ec9A09F232365bDED285e744E0446e2",
+            "chainId": 137,
+            "name": "SLP GNFT/USDC",
+            "symbol": "SlpGnftEth",
+            "decimals": 18,
+            "logoURI": "https://res.cloudinary.com/sushi-cdn/image/fetch/f_auto,c_limit,w_48,q_auto/https://app.sushi.com/images/logo.svg"
+        },
+        "UlpGnftEth": {
+            "address": "0xbCaD06fdFcEa3FD7D082b14F47A6757e11c5846c",
+            "chainId": 1,
+            "name": "ULP GNFT/WETH",
+            "symbol": "UlpGnftEth",
+            "decimals": 18,
+            "logoURI": "https://app-test.defihuntersdao.club/images/ico/uni.svg"
+        },
+        "SlpDdaoEth": {
+            "address": "0xfC067766349d0960bdC993806EA2E13fcFC03C4D",
+            "chainId": 137,
+            "name": "SLP DDAO/WETH",
+            "symbol": "SlpDdaoEth",
+            "decimals": 18,
+            "logoURI": "https://res.cloudinary.com/sushi-cdn/image/fetch/f_auto,c_limit,w_48,q_auto/https://app.sushi.com/images/logo.svg"
         }
     }
 }

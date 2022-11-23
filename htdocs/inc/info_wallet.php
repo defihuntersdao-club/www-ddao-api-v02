@@ -11,8 +11,13 @@ if(!$wal || strlen($wal) != 42 || substr($wal,0,2)!= "0x")
 else
 {
 
-include "balance.inc";
+$tkns[ddao] 	= "0x90F3edc7D5298918F7BB51694134b07356F7d0C7";
+$tkns[addao] 	= "0xca1931c970ca8c225a3401bb472b52c46bba8382";
+$tkns[vesting]  = "0xa9a2d6b16f3dd4c145aa8c875b9ceb8cda3022e3";
 
+//include "balance.inc";
+
+/*
 $f = __DIR__."/".$item.".json";
 
 $f2 = "/www/app.defihuntersdao.club/1_test/www-ddao-app/bin/001_load_tokenlists.php.json";
@@ -31,9 +36,10 @@ if(file_exists($f2))
 //print $f;
 $a = file_get_contents($f);
 $mas2 = json_decode($a,1);
+*/
 
-$nets[1] = "eth";
-$nets[56] = "bsc";
+//$nets[1] = "eth";
+//$nets[56] = "bsc";
 $nets[137] = "matic";
 
 foreach($nets as $chain_id=>$net)
