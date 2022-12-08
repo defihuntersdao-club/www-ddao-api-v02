@@ -85,7 +85,10 @@ foreach($jss2 as $net=>$jss)
 {
 
     $rpc = $rpc_mas[$net];
+    $t2 = microtime(1);
     $mas = curl_mas2($jss,$rpc,0);
+    $t3 = microtime(1)-$t2;
+    $o[time]["curl_".$net] = $t3;
 //print_r($jss);
 //print_r($mas);
     foreach($mas as $v2)

@@ -1,6 +1,16 @@
 <?php
 //print "<pre>";
 
+$cache_file = $cache_dir.$item.".json";
+$cache_time = filemtime($cache_file);
+if(time() < ($cache_time+10))
+{
+    $a = file_get_contents($cache_file);
+    $a = json_decode($a,1);
+    $o[result] = $a;
+}
+else
+{
 
 $skip_result = 1;
 include "rate.php";
@@ -42,8 +52,11 @@ $v[id] = $net."_blk";
 //$v[id] = "balance_".$name;
 $jss[] = $v;
 */
-
+    $t2 = microtime(1);
 $mas = curl_mas2($jss,$rpc,0);
+    $t3 = microtime(1)-$t2;
+    $o[time]["curl2_".$net] = $t3;
+
 //print_r($mas);
     foreach($mas as $v2)
     {
@@ -58,6 +71,7 @@ $mas = curl_mas2($jss,$rpc,0);
 		$v = hexdec($v);
 		$v /= 10**9;
 		$v = round($v,2);
+		
 	    break;
 	    case "blk":
 		$v = "";
@@ -70,21 +84,52 @@ $mas = curl_mas2($jss,$rpc,0);
 }
 $t = $o2[matic][sushi][ddao_weth][rate_usd];
 $t = round($t,3);
+if($t)
 $o3[rate_ddao] 	= $t;
+else
+$err++;
 
 $t = $o2[matic][quick][wmatic_usdc][rate1];
 $t = round($t,3);
+if($t)
 $o3[rate_matic]	= $t;
+else
+$err++;
 
 $t = $o2[matic][univ2][weth_usdc][rate_usd];
 $t = round($t,1);
+if($t)
 $o3[rate_eth] 	= $t;
+else
+$err++;
 
 
 $t = $o2[matic][univ2][wbtc_usdc][rate_usd];
 $t = round($t,1);
+if($t)
 $o3[rate_btc] 	= $t;
-//$o3[o2] = $o2;
+else
+$err++;
 
-$o[result] = $o3;
+//$o3[o2] = $o2;
+if(!isset($o3[matic_gas]))$err++;
+if(!isset($o3[eth_gas]))$err++;
+
+if(!$err)
+{
+
+    $o[result] = $o3;
+    unset($o[time]);
+    unset($o[err]);
+    $t = json_encode($o3,192);
+    file_put_contents($cache_file,$t);
+}
+else
+{
+    $a = file_get_contents($cache_file);
+    $a = json_decode($a,1);
+    $o[result] = $a;
+}
+}
+
 ?>

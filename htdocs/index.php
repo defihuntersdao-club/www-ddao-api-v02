@@ -19,6 +19,7 @@ $domen[] = "https://app-test2.defihuntersdao.club/";
 $domen[] = "https://app.defihuntersdao.club/";
 $domen[] = "https://dbayc.defihuntersdao.club/";
 
+$cache_dir = __DIR__."/cache/";
 if(0)
 if(!in_array($ref,$domen))
 {
@@ -58,7 +59,7 @@ switch($item)
 	$need_cache = 5;
     break;
     case "dashboard":
-	$need_cache = 5;
+//	$need_cache = 5;
     break;
     case "main":
     case "":
